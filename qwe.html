@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		*{
+			margin: 0 auto;
+			padding: 0;
+			list-style: none;
+			border: 1px solid black;
+		}
+		body{
+			background: ivory;
+		}
+		header{
+			background: aqua;
+			padding: 20px;
+			text-align: center;
+		}
+		header ul{
+			display: inline-block;			
+			text-align: center;
+			border: 1px solid orange;
+			width: 100%;
+		}
+		header ul li{
+			display: inline-block;
+			padding: 0px 8px;
+			text-align: center;
+		}
+		header span{
+			background: ivory;
+			border: 1px limegreen solid;
+			padding: 4px;
+			float: right;
+		}
+		header ul div{
+			float: left;
+		}
+		header ul p{
+			display: inline-block;
+		}
+		main{
+			padding: 40px;
+			clear: both;
+		}
+		footer{
+			padding: 20px;
+			text-align: center;
+		}
+		footer aside{
+			padding: 10px;
+			width: 45%;
+			display: inline-block;
+		}
+		footer article{
+			padding: 10px;
+			width: 45%;
+			display: inline-block;
+			background: lightyellow;
+		}
+		article ul{
+			padding: 10px;
+			width: 55%;
+		}
+		article ul li{
+			display: block;
+			line-height: 35px;
+		}
+		article ul li{
+			display: block;
+			line-height: 35px;
+		}
+		body{
+			position: fixed;
+			top:50%;
+			left: 50%;
+			transform: translate(-50%,-50%);
+		}
+		@media screen and (max-width: 1000px){
+			body{
+				width: 1000px;
+			}
+		}
+		.end ul li{
+			display: inline-block;
+			padding: 10px;
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<ul>
+			<div>
+				<li>lov1e</li>
+				<li>love</li>
+				<li>love</li>
+				<li>lo23ve</li>
+				<li>love</li>
+				<li>lo3ve</li>
+				<li>love</li>
+				<li>love</li>
+			</div>
+			<p>
+				Lorem, ipsum, dolor.
+			</p>
+			<span>
+				<input type="text">
+			</span>	
+		</ul>
+	</header>
+	<main>
+		Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga modi eius ullam unde?
+	</main>
+	<footer>
+		<aside>
+			Lorem ipsum dolor sit amet consectetur adipisicing, elit. Tempora excepturi ad at consequatur consequuntur fugiat non inventore aliquam minus officia ullam illum iste nemo saepe temporibus eveniet id, repellat facere.
+		</aside>
+		<article>
+			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi accusamus tenetur eius iusto ullam iste inventore, aut dolores velit laborum perspiciatis ratione, hic non reprehenderit culpa deserunt natus dolorem quasi.</p>
+			<ul>
+				<li>height</li>
+				<li>height</li>
+				<li>height</li>
+				<li>height</li>
+			</ul>
+		</article>
+	</footer>
+	<div class="end">
+		<ul id="ul1">
+			<li>lorem</li>
+			<li>lorem</li>
+			<li>lorem</li>
+			<li>lorem</li>
+			<li>lorem</li>
+		</ul>
+		<ul id="ul2">
+			<li>love</li>
+			<li>love</li>
+			<li>love</li>
+			<li>love</li>
+			<li>love</li>
+		</ul>
+	</div>
+	<script>
+		var ul1=document.getElementById('ul1').getElementsByTagName('li');
+		var ul2=document.getElementById('ul2').getElementsByTagName('li');
+		for(var i=0; i<ul1.length;i++){
+			ul1[i].index=i;
+			ul1[i].onclick=function function_name(argument) {
+				for (var i=0; i<ul1.length;i++) {
+					ul2[i].style.background='aqua'
+				}
+				ul2[this.index].style.background='red'
+			}
+		}
+	</script>
+</body>
+</html>
