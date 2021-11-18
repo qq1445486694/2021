@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{margin: 0px auto;padding: 0;}
+        ul{
+            list-style: none;
+        }
+        #bigbox{
+            display: flex;
+            width: 90%;
+            font-size: 14px;
+            font: 400 1em/1.8 'Microsoft Yahei', 'PingFang SC', 'Avenir', 'Segoe UI', 'Hiragino Sans GB', STHeiti, 'Microsoft Sans Serif', 'WenQuanYi Micro Hei', sans-serif;
+    font-style: normal;
+    font-variant-ligatures: normal;
+    font-variant-caps: normal;
+    font-variant-numeric: normal;
+    font-variant-east-asian: normal;
+    font-weight: 400;
+    font-stretch: normal;
+    font-size: 1em;
+    line-height: 1.8;;
+    text-align: center;
+        }
+        #bigbox div{
+            min-width: 30px;
+            background: lightblue;
+            border: 2px solid lime;
+            padding: 10px;
+            flex-basis: 33.3%;
+        }
+        #bigbox img{
+            height: 89px;
+        }
+        @media screen and (max-width: 900px){
+            #bigbox{
+                width: 800px
+            }
+
+        }
+        @media screen and (max-width: 1120px){
+            #bigbox{
+                font-size: 10px;
+                width: 1000px;
+                outline: 10px solid red;
+            }
+        }
+        @media screen and (max-width: 1340px){
+            #bigbox img{
+                height: 50px
+            }
+            #bigbox{
+                font-size: 14px;
+                outline: 10px solid orange;
+            }
+        }
+        @media screen and (min-width: 1340px){
+            #bigbox{
+                font-size: 16px;
+                width: 1340px;
+                outline: 10px solid black;
+                
+            }
+            #bigbox div{
+            min-width: 30px;
+            background: lightblue;
+            border: 2px solid lime;
+            padding: 10px;
+            width: 336px;
+        }
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <div id="bigbox">
+         <div>
+            <img src="img/0.jpg" alt="">
+            <ul>
+                <li>Lorem ipsum dolor sit amet consectetur.</li>
+                <li>Lorem ipsum dolor sit amet consectetur.</li>
+                <li>Lorem ipsum dolor sit amet consectetur.</li>
+                <li>Lorem ipsum dolor sit, amet consectetur.</li>
+                <li>Lorem ipsum dolor sit amet consectetur.</li>
+            </ul>
+        </div>
+        <div>
+            <img src="img/0.jpg" alt="">
+            <ul>
+                <li>Lorem, ipsum dolor sit amet consectetur.</li>
+                <li>Lorem, ipsum dolor sit amet consectetur.</li>
+                <li>Lorem ipsum dolor sit amet consectetur.</li>
+                <li>Lorem ipsum dolor sit amet consectetur.</li>
+                <li>Lorem ipsum dolor sit, amet consectetur.</li>
+            </ul>
+        </div>
+            <div>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ea voluptatem praesentium magni impedit, rem quo similique fugiat et molestias eligendi voluptas quae laboriosam delectus sint eum illum. Odit, reprehenderit nam.</div>
+        </div>
+    </div>
+</body>
+</html>
