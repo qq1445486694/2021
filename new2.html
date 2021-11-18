@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		h1, h2, h3, h4, h5, h6, form, p, p, i, img, ul, li, ol, table, tr, td,th, fieldset, label, legend,button,input { margin:0;padding:0;}
+		li{list-style:none;font-size: 12px}
+		a img{border:none;}
+		a:link{text-decoration:none;color:#07519A;}
+		a:visited{text-decoration:none;color:#07519A;}
+		a:active,a:hover{text-decoration:underline;color:#07519A;}
+		#bigbox{
+			background: black;
+			padding: 50px;
+		}
+		#box1{
+			background: orange;
+			height: 300px;
+			display: flex;
+			flex-flow: row nowrap;
+			padding: 20px;
+		}
+		#box1 div{
+			background: yellow;
+			flex:1;
+		}
+		#box2{
+			background: aqua;
+			height: 300px;
+		}
+		@media screen and (max-width: 1200px){
+			#bigbox{
+				width: 1200px;
+			}
+		}
+	</style>
+</head>
+<body>
+	<div id="bigbox">
+		<div id="box1">
+			<div>
+				<ul>
+					<li>Lorem ipsum dolor sit.</li>
+					<li>Lorem ipsum, dolor sit.</li>
+					<li>Lorem ipsum dolor sit.</li>
+					<li>Lorem ipsum dolor sit.</li>
+					<li>Lorem ipsum dolor sit.</li>
+				</ul>
+			</div>
+			<div>
+				<ul>
+					<li>Lorem ipsum dolor sit.</li>
+					<li>Lorem ipsum dolor sit.</li>
+					<li>Lorem ipsum dolor sit.</li>
+					<li>Lorem ipsum dolor sit.</li>
+					<li>Lorem ipsum dolor sit.</li>
+				</ul>
+			</div>
+			<div>
+				<ul>
+					<li>Lorem ipsum dolor sit.</li>
+					<li>Lorem ipsum dolor sit.</li>
+					<li>Lorem ipsum dolor sit.</li>
+					<li>Lorem, ipsum dolor sit.</li>
+					<li>Lorem ipsum dolor sit.</li>
+				</ul>
+			</div>
+		</div>
+		<div id="box2"></div>
+	</div>
+</body>
+</html>

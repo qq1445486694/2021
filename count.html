@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<body>
+	<pre>
+	function count(argument) {
+		let x=2,y=5;
+		x=++y;
+		console.log(x+','+y);
+		x=y++;
+		console.log(x+','+y);
+	}
+	count();
+	function count_two(argument) {
+		let a=2,b=5;
+		a=--b;
+		console.log(a+','+b);
+		a=b--;
+		console.log(a+','+b);
+	}
+	count_two();
+
+	</pre>
+<script>
+	function count(argument) {
+		let x=2,y=5;
+		x=++y;
+		console.log(x+','+y);
+		x=y++;
+		console.log(x+','+y);
+	}
+	count();
+	function count_two(argument) {
+		let a=2,b=5;
+		a=--b;
+		console.log(a+','+b);
+		a=b--;
+		console.log(a+','+b);
+	}
+	count_two();
+	console.log('关于');
+	debugger;
+	function num(a) {
+		switch(a){
+			case 0:console.log('0');
+			break;
+			case 1:console.log('1');
+			break;
+			case 2:console.log('2');
+			break;
+			default:console.log('none')
+		}
+	}
+	num(5);
+
+	function forin(argument) {
+		let arr1=[1,5,3,98,1060];
+		for(x in arr1){
+			console.log(x+'数字')
+		}
+		for (var i = arr1.length - 1; i >= 0; i--) {
+			if(arr1[i]<3) continue;
+			console.log(arr1[i])
+		}
+	}
+	forin();
+	try{
+		funq('lorem');
+	}
+	catch(err){
+		console.log('错误提示：'+err)
+	}
+</script>
+</body>
+</html>

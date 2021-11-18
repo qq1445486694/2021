@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<style>
+		h4{
+			border: 1px solid darkblue;
+			padding: 10px;
+			background: lightyellow
+		}
+		#flexbox{
+			display: flex;
+			flex-direction: row;
+			border: 1px solid red;
+		}
+		#flexbox div{
+			border: 1px solid darkblue
+		}
+		#flexbox_2{
+			display: flex;
+			flex-direction: column;
+			border: 1px solid red;
+		}
+		#flexbox_2 div{
+			border: 1px solid darkblue
+		}
+		#flexbox_3{
+			display: flex;
+			flex-direction: row;
+			border: 1px solid red;
+			flex-wrap: wrap;
+		}
+		#flexbox_3 div{
+			border: 1px solid darkblue;
+			width: 500px;
+		}
+		#flexbox_4{
+			display: flex;
+			flex-flow: row wrap;
+			border: 1px solid red;
+			
+		}
+		#flexbox_4 div{
+			border: 1px solid darkblue;
+			width: 500px;
+		}
+		#flexbox_5{
+			display: flex;
+			justify-content: center;
+			border: 1px solid darkblue
+		}
+		#flexbox_5 div{
+			width: 300px;
+			background: lightyellow;
+		}
+	</style>
+</head>
+<body>
+	<div id="flexbox">
+		<div>Lorem, ipsum dolor sit, amet consectetur adipisicing elit. Vitae ullam cum alias. Nam ea aperiam optio, et autem laudantium, doloribus eaque repudiandae? Laborum, quis magni ab molestias vitae accusamus nesciunt?</div>
+		<div>Lorem ipsum dolor sit amet, consectetur, adipisicing elit. Velit, delectus provident, dicta nulla perferendis ipsa eveniet qui non debitis exercitationem ipsam iure quod laborum amet odio eos, a adipisci nobis!</div>
+		<div>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus amet inventore, alias commodi natus impedit in illo autem molestiae tempore. Quae dolorem consectetur omnis aliquam officiis repudiandae corrupti, delectus quam.</div>
+	</div>
+	<pre>
+		#flexbox{
+			display: flex;
+			flex-direction: row;
+			border: 1px solid red;
+		}
+		#flexbox div{
+			border: 1px solid darkblue
+		}		
+	</pre>
+	<div id="flexbox_2">
+		<div>Lorem, ipsum dolor sit, amet consectetur adipisicing elit. Vitae ullam cum alias. Nam ea aperiam optio, et autem laudantium, doloribus eaque repudiandae? Laborum, quis magni ab molestias vitae accusamus nesciunt?</div>
+		<div>Lorem ipsum dolor sit amet, consectetur, adipisicing elit. Velit, delectus provident, dicta nulla perferendis ipsa eveniet qui non debitis exercitationem ipsam iure quod laborum amet odio eos, a adipisci nobis!</div>
+		<div>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus amet inventore, alias commodi natus impedit in illo autem molestiae tempore. Quae dolorem consectetur omnis aliquam officiis repudiandae corrupti, delectus quam.</div>
+	</div>
+	<pre>
+		#flexbox_2{
+			display: flex;
+			flex-direction: column;
+			border: 1px solid red;
+		}
+		#flexbox_2 div{
+			border: 1px solid darkblue
+		}		
+	</pre>
+	<div id="flexbox_3">
+		<div>Lorem, ipsum dolor sit, amet consectetur adipisicing elit. Vitae ullam cum alias. Nam ea aperiam optio, et autem laudantium, doloribus eaque repudiandae? Laborum, quis magni ab molestias vitae accusamus nesciunt?</div>
+		<div>Lorem ipsum dolor sit amet, consectetur, adipisicing elit. Velit, delectus provident, dicta nulla perferendis ipsa eveniet qui non debitis exercitationem ipsam iure quod laborum amet odio eos, a adipisci nobis!</div>
+		<div>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus amet inventore, alias commodi natus impedit in illo autem molestiae tempore. Quae dolorem consectetur omnis aliquam officiis repudiandae corrupti, delectus quam.</div>
+	</div>
+<pre>
+        #flexbox_3{
+			display: flex;
+			flex-direction: row;
+			border: 1px solid red;
+			flex-wrap: wrap;     /*默认不换行但宽度不固定，设置为换行宽度固定*/
+		}
+		#flexbox_3 div{
+			border: 1px solid darkblue;
+			width: 500px;
+		}
+</pre>
+	<div id="flexbox_4">
+		<div>Lorem, ipsum dolor sit, amet consectetur adipisicing elit. Vitae ullam cum alias. Nam ea aperiam optio, et autem laudantium, doloribus eaque repudiandae? Laborum, quis magni ab molestias vitae accusamus nesciunt?</div>
+		<div>Lorem ipsum dolor sit amet, consectetur, adipisicing elit. Velit, delectus provident, dicta nulla perferendis ipsa eveniet qui non debitis exercitationem ipsam iure quod laborum amet odio eos, a adipisci nobis!</div>
+		<div>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus amet inventore, alias commodi natus impedit in illo autem molestiae tempore. Quae dolorem consectetur omnis aliquam officiis repudiandae corrupti, delectus quam.</div>
+	</div>
+	<pre>
+		#flexbox_4{
+			display: flex;
+			flex-flow: row wrap;      /*flex-direction和flex-wrap的简写*/
+			border: 1px solid red;
+			
+		}
+		#flexbox_4 div{
+			border: 1px solid darkblue;
+			width: 500px;
+		}		
+	</pre>
+	<div id="flexbox_5">
+		<div>Lorem ipsum, dolor sit amet, consectetur adipisicing elit. Culpa, tempore est placeat sunt earum harum beatae aliquam blanditiis, cum aut error quos hic, ipsum provident voluptate necessitatibus commodi eaque dolorem.</div>
+		<div>Lorem, ipsum dolor sit amet, consectetur adipisicing elit. Odio hic vero nisi nostrum pariatur. Velit ea laboriosam, exercitationem eaque distinctio quae officiis possimus, rerum assumenda porro, ex dolores numquam quaerat.</div>
+		<div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem molestias repudiandae natus eius sit, delectus quo quae, voluptate. Voluptate fugiat, aspernatur. Repudiandae molestiae ad illum nam laborum ipsa sit itaque.</div>
+		<div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam quam, omnis, provident aliquam quia tempora voluptates? Ducimus, iste ea nulla et veniam? Minus quo iusto est placeat vitae perspiciatis illo.</div>
+	</div>
+</body>
+</html>

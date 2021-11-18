@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<style>
+		h4{
+			border: 1px solid darkblue;
+			padding: 10px;
+			background: lightyellow
+		}
+	</style>
+</head>
+<body>
+	<div id="example"></div>
+<pre>
+&lt;script&gt;
+txt = "&lt;p&gt;浏览器代号: " + navigator.appCodeName + "&lt;/p&gt;";
+txt+= "&lt;p&gt;浏览器名称: " + navigator.appName + "&lt;/p&gt;";
+txt+= "&lt;p&gt;浏览器版本: " + navigator.appVersion + "&lt;/p&gt;";
+txt+= "&lt;p&gt;启用Cookies: " + navigator.cookieEnabled + "&lt;/p&gt;";
+txt+= "&lt;p&gt;硬件平台: " + navigator.platform + "&lt;/p&gt;";
+txt+= "&lt;p&gt;用户代理: " + navigator.userAgent + "&lt;/p&gt;";
+txt+= "&lt;p&gt;用户代理语言: " + navigator.language + "&lt;/p&gt;";
+document.getElementById("example").innerHTML=txt;
+&lt;/script&gt;
+</pre>
+</body>
+<script>
+txt = "<p>浏览器代号: " + navigator.appCodeName + "</p>";
+txt+= "<p>浏览器名称: " + navigator.appName + "</p>";
+txt+= "<p>浏览器版本: " + navigator.appVersion + "</p>";
+txt+= "<p>启用Cookies: " + navigator.cookieEnabled + "</p>";
+txt+= "<p>硬件平台: " + navigator.platform + "</p>";
+txt+= "<p>用户代理: " + navigator.userAgent + "</p>";
+txt+= "<p>用户代理语言: " + navigator.language + "</p>";
+document.getElementById("example").innerHTML=txt;
+</script>
+</html>

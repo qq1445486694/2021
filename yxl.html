@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<style>
+		h4{
+			border: 1px solid darkblue;
+			padding: 10px;
+			background: lightyellow
+		}
+	</style>
+</head>
+<body>
+	
+</body>
+<script>
+	function man(name,sex,married) {
+		this.name=name;
+		this.sex=sex;
+		this.danshen=married;
+	}
+	var ar=new man('zsf','男','否');
+	console.log(ar.sex);
+	man.prototype.eat = function(fruit) {
+		this.eat=fruit
+	};
+	var b=ar.eat('watermelon');
+	console.log(ar.eat);
+	function woman(name,sex,married) {
+		this.name=name;
+		this.sex=sex;
+		this.danshen=married;
+	}
+	woman.prototype=man.prototype;
+	var bre=new woman('banana','nv','yes');
+	var bree=bre.eat('bannnnn');
+	console.log(bre.eat);
+</script>
+</html>

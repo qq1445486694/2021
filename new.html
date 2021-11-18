@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		h1, h2, h3, h4, h5, h6, form, p, p, i, img, ul, li, ol, table, tr, td,th, fieldset, label, legend,button,input { margin:0;padding:0;}
+		li{list-style:none;font-size: 12px}
+		a img{border:none;}
+		a:link{text-decoration:none;color:#07519A;}
+		a:visited{text-decoration:none;color:#07519A;}
+		a:active,a:hover{text-decoration:underline;color:#07519A;}
+
+		#content{
+
+		}
+		#box_1{
+			border: 1px solid red;
+			display: flex;
+			flex-flow: row nowrap;
+			justify-content: center;
+			background: black;
+
+		}
+		#box_1 div{
+			border: 1px solid darkblue;
+			padding: 20px;
+			min-width: 250px;
+			flex:1;
+			max-width: 380px;
+			background: hotpink
+		}
+		#box_1 div ul{
+			border: 1px solid lime;
+			background: yellow;
+			white-space: nowrap;
+			line-height: 28px;
+		}
+		#box_1 div ul li{
+			overflow: hidden;
+
+		}
+		#box_1 img{
+			width: 100px;
+			height: 80px;
+			vertical-align: top;
+		}
+		#box_1 b{
+			background: red;
+			padding-left: 10px;
+		}
+		#box_1 b:before{
+			content: url(img/q.png);
+		}
+		#main_d{
+			height: 80px;
+			display: flex;
+			flex-flow: column;
+			justify-content: space-between;
+			background: red;
+			flex-grow: 1;
+		}
+		#main_d p{
+
+			border: 1px solid lime
+		}
+		#main_d p{
+
+			border: 1px solid lime
+		}
+		#box_2{
+			background: aqua;
+			display: flex;
+			flex-flow: row nowrap;
+			border: 1px solid lime;
+			justify-content: left;
+			height: 200px;
+			overflow: hidden;
+			width: 1340px;
+			margin: 0px auto;
+			position: relative;
+		}
+		#box_2 div{
+			width: 20%;
+			background: yellow;
+			padding: 10px;
+			-webkit-line-clamp: 2;
+			min-width: 246px;
+		}
+		#box_2 img{
+			width: 100%;
+			height: 56%;
+			background: yellow;
+
+		}
+		#box_2 dt{
+			display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 2; /*限制多少行*/
+        overflow: hidden;
+		}
+		#main{
+			display: flex;
+			height: 80px;
+		}
+		#main img{
+			height: 80px;
+			width: auto;
+			vertical-align: top;
+		}
+		@media screen and (max-width:1240px){
+			#box_2{
+				width: 100%;
+			}
+		}
+		h4{
+
+			
+			border-bottom:2px dashed blue;
+			margin-bottom: 5px; 
+		}
+		h4 span{
+			padding: 0px 10px;
+			
+			line-height: 50px;
+			display: inline-block;
+			border-bottom: 3px solid black
+		}
+		#btn1{
+			position: absolute;
+			left: 0px;
+			height: 12%;
+			top: 44%;
+		}
+		#btn2{
+			position: absolute;
+			right: 0px;
+			height: 12%;
+			top: 44%;
+		}
+	</style>
+</head>
+<body>
+	<div id="content">
+	<div id="box_1">
+		<div>
+			<ul>
+			<li>
+				<img src="img/muban.png" alt="">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+			</li>
+			<li>
+			Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+			</li>
+			<li>
+			Lorem ipsum dolor sit amet, consectetur, adipisicing elit.
+			</li>
+			<li>
+			Lorem, ipsum dolor sit amet consectetur, adipisicing elit.
+			</li>
+			<li>
+			Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+			</li>
+			<li>
+			Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+			</li>
+		</ul>
+	</div>
+		<div>
+			<ul>
+			<li id="main">
+				<img src="img/muban.png" alt="">
+				<banner id="main_d">
+					<p>Lorem, ipsum dolor sit amet.</p>
+					<p>Lorem ipsum dolor sit, amet.</p>
+				</banner>
+			</li>
+			<li>
+				<b>计划内容</b>Lorem ipsum dolor, sit amet consectetur, adipisicing elit.
+			</li>
+			<li>
+				<b>计划内容</b>Lorem ipsum dolor, sit amet consectetur, adipisicing elit.
+			</li>
+			<li>
+				<b>计划内容</b>Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+			</li>
+			<li>
+				<b>计划内容</b>Lorem, ipsum dolor sit, amet consectetur adipisicing elit.
+			</li>
+			<li>
+				<b>计划内容</b>Lorem ipsum dolor sit, amet consectetur, adipisicing elit.
+			</li>
+		</ul>
+	</div>
+		<div>
+			<ul>
+			<li>
+				<img src="img/muban.png" alt="">Lorem ipsum dolor sit amet consectetur adipisicing, elit.
+			</li>
+			<li>
+				Lorem ipsum, dolor sit amet, consectetur adipisicing elit.
+			</li>
+			<li>
+				Lorem ipsum dolor sit amet consectetur adipisicing elit.
+			</li>
+			<li>
+				Lorem ipsum, dolor, sit amet consectetur adipisicing elit.
+			</li>
+			<li>
+				Lorem, ipsum dolor sit amet consectetur, adipisicing elit.
+			</li>
+			<li>
+				Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+			</li>
+		</ul>
+	</div>
+	</div>
+		<h4><span>视觉焦点</span></h4>
+	<banner id="box_2">
+		<div id="lunbo">
+			<img src="img/muban.png" alt="">
+			<dt>Lorem ipsum, dolor sit amet consectetur, adipisicing elit. Nam, corporis! Tempore, laboriosam.</dt>
+		</div>
+		<div>
+			<img src="img/muban.png" alt="">
+			<dt>Lorem ipsum, dolor sit amet consectetur, adipisicing elit. Unde fuga eaque amet.</dt>
+		</div>
+		<div>
+			<img src="img/muban.png" alt="">
+			<dt>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit minus, quia animi?</dt>
+		</div>
+		<div>
+			<img src="img/muban.png" alt="">
+			<dt>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas laudantium et expedita.</dt>
+		</div>
+		<div>
+			<img src="img/muban.png" alt="">
+			<dt>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam et, quidem minus?</dt>
+		</div>
+		<div>
+			<img src="img/muban.png" alt="">
+			<dt>Lorem ipsum, dolor sit amet consectetur, adipisicing elit. Nam, corporis! Tempore, laboriosam.</dt>
+		</div>
+		<div>
+			<img src="img/muban.png" alt="">
+			<dt>Lorem ipsum, dolor sit amet consectetur, adipisicing elit. Unde fuga eaque amet.</dt>
+		</div>
+		<div>
+			<img src="img/muban.png" alt="">
+			<dt>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit minus, quia animi?</dt>
+		</div>
+		<div>
+			<img src="img/muban.png" alt="">
+			<dt>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas laudantium et expedita.</dt>
+		</div>
+		<div>
+			<img src="img/muban.png" alt="">
+			<dt>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam et, quidem minus?</dt>
+		</div>
+	<button id="btn1">按钮</button>
+	<button id="btn2">按钮</button>
+	</banner>
+	</div>
+	Lorem ipsum, dolor sit amet consectetur adipisicing elit. Enim quidem facilis modi a optio saepe illo id minima tenetur in molestiae aliquam, temporibus quos ex officia. Ab facilis velit cumque?
+	<script>
+		var btn_1=document.getElementsByTagName('button')[0];
+		var btn_2=document.getElementsByTagName('button')[1];
+		var lunbo=document.getElementById('box_2').getElementsByTagName('div');
+		var vvv=0;
+		if(vvv==0){
+			btn_1.style.visibility="hidden"
+		}
+		btn_1.onclick=function (argument) {
+
+			for (var i = lunbo.length - 1; i >= 0; i--) {
+				lunbo[i].style.webkitTransform="translate("+0+"px,0px)";
+				lunbo[i].style.transition = '-webkit-transform 1s';
+				btn_1.style.visibility="hidden";
+				btn_2.style.visibility="visible";
+			}
+
+		}
+		btn_2.onclick=function (argument) {
+			for (var i = lunbo.length - 1; i >= 0; i--) {
+				lunbo[i].style.webkitTransform="translate("+-1322+"px,0px)";
+				lunbo[i].style.transition = '-webkit-transform 1s';
+				btn_2.style.visibility="hidden";
+				btn_1.style.visibility="visible";
+			}
+			
+		}
+
+	</script>
+</body>
+</html>
